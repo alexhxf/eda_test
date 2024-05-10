@@ -7,11 +7,11 @@
     - name: Say Hello 1
       condition: event.i == 1
       action:
-        run_playbook:
+        run_job_template:
           name: ansible.eda.hello
     - name: Say Hello 2
       condition: event.i == 2
       action:
-        run_playbook:
+        run_job_template:
           name: ansible.eda.hello
 
